@@ -1,0 +1,3 @@
+[submodule "stitch-core"]
+	path = stitch-core
+	url = https://github.com/PolisanTheEasyNick/stitch-core
