@@ -3,4 +3,4 @@
 	url = https://github.com/PolisanTheEasyNick/stitch-core
 [submodule "stitch-ui"]
 	path = stitch-ui
-	url = https://github.com/YourUsername/stitch-ui.git
+	url = https://github.com/PolisanTheEasyNick/stitch-ui.git
