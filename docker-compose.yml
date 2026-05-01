@@ -22,7 +22,7 @@ services:
     depends_on:
       - stitchcore
     ports:
-      - "8080:80"
+      - "8085:80"
 
 volumes:
   stitch_data:
