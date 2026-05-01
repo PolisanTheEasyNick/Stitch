@@ -1,0 +1,28 @@
+services:
+  stitchcore:
+    build:
+      context: ./stitch-core
+      dockerfile: Dockerfile
+    container_name: stitchcore
+    restart: unless-stopped
+    user: "0:0"
+    ports:
+      - "4308:4308"
+    env_file:
+      - ./config.env
+    volumes:
+      - stitch_data:/data
+
+  stitchui:
+    build:
+      context: ./stitch-ui
+      dockerfile: Dockerfile
+    container_name: stitchui
+    restart: unless-stopped
+    depends_on:
+      - stitchcore
+    ports:
+      - "8080:80"
+
+volumes:
+  stitch_data:
